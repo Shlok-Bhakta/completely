@@ -11,3 +11,12 @@ wheels/
 
 # Secrets
 .env
+
+# Model stuff
+checkpoints/
+
+tests/realworld/django/
+tests/realworld/requests/
+
+*.7z
+*.log

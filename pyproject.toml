@@ -5,8 +5,21 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "accelerate>=1.12.0",
     "datasets>=4.4.2",
+    "dotenv>=0.9.9",
+    "fastapi>=0.127.0",
+    "mamba-ssm",
+    "ninja",
+    "openrouter>=0.1.1",
+    "psutil>=7.2.1",
+    "python-dotenv>=1.2.1",
+    "tokenizers",
     "torch>=2.9.1",
+    "torchaudio",
+    "torchvision",
     "transformers>=4.57.3",
+    "tree-sitter>=0.25.2",
+    "tree-sitter-python>=0.25.0",
+    "uvicorn>=0.40.0",
+    "wandb",
 ]
