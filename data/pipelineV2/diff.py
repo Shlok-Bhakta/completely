@@ -2,7 +2,7 @@
 
 class Diff:
     def diff_mini(a: str, b: str):
-        """Will return a tiny diff. so only what changed for example
+        """Will return a tiny diff of the first difference spotted. so only what changed for example
 
         hello world
         and 
@@ -32,7 +32,7 @@ class Diff:
         ```
 
         This will be used as the basis for the diff generation.
-        
+        There are a lot of weird edge cases to consider as well like lines shifting and such. 
 
         Parameters:
             a (str): initial string
@@ -41,3 +41,8 @@ class Diff:
         Returns:
             None
         """
+        for i in zip(a.split("\n"), b.split("\n")):
+            print(i)
+            if i[0] != i[1]:
+                return f"- {i[0]}\n+ {i[1]}"
+    

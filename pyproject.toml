@@ -25,3 +25,8 @@ dependencies = [
     "uvicorn>=0.40.0",
     "wandb",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
